@@ -16,6 +16,8 @@ int main()
     srand(9); 
     int numDigits = 9;
     int password = generatePassword(numDigits);
+    // int password = 7845;
+
     crackPassword(1, pow(10,numDigits)-1, password);
 
     int pw = crackPassswordPerDigit(password, numDigits);
