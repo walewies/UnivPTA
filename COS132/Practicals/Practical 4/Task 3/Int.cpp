@@ -2,10 +2,14 @@
 
 int findInt(int target, int current)
 {
-    //Implement here
+    int result = (current == target) ?
+    current :
+    findInt(target, current + 1);
+
+    return result;
 }
 
 char convertChar(int character){
-    //Implement here
+    return character + '0';
 }
 
