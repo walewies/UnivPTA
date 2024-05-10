@@ -1,5 +1,6 @@
 #include "NumberUtils.h"
 #include <cmath>
+#include <iostream>
 
 int reverseInteger(int number) {
     int reversed = 0;
@@ -52,10 +53,7 @@ bool isArmstrong(int number) {
 
 bool isPerfect(int number) {
     int sum = 0;
-    for (int i = ((int) (number / 2)) + 1; i >= 1; i++) {
-        if (i == 1) {
-            sum += 1;
-        }
+    for (int i = 1; i < (number / 2 + 1); i++) {
         if (number % i == 0) {
             sum += i;
         }

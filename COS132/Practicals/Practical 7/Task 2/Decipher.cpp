@@ -8,19 +8,18 @@ char shiftCharacter(char input, int shift) {
     char base;
     // lowercase
     if (input >= 'a') {
-        // cout << input << " L\n";
         base = 'a';
-    } else { // UPPERCASE
-        // cout << input << " U\n";
+    } else if (input < 'a' && input >= 'A') { // UPPERCASE
         base = 'A';
+    } else {
+        cout << "Invalid Input";
     }
 
     int offset = input - base;
-    // cout << input << " " << base << " " << offset << "\n";
     int shiftedIndex = shift + offset;
-    shiftedIndex = shiftedIndex % 25;
+    shiftedIndex = shiftedIndex % 26;
 
-    char result = (char) shiftedIndex + base;
+    char result = (char) (shiftedIndex + base);
 
     return result;
 }
