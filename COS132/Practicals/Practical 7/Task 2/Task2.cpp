@@ -1,11 +1,19 @@
 #include "Decipher.h"
 #include "StringUtils.h"
 #include <iostream>
+#include "NumberUtils.h"
 
 using namespace std;
 int main() {
     int code1 = 121;  // A palindrome
     int code2 = 153;  // An Armstrong number (not a perfect number)
+
+    // cout << isPalindrome(code1);
+    // cout << isArmstrong(code2);
+    // cout << reverseInteger(code1);
+    // cout << isPerfect(6);
+    // cout << getNumberOfDigits(123456);
+
 
     string enc1 = "Bejwheva pda zalhkuiajp kb pda oqnraehhwjya japskng xu M3 xabkna pda qlykiejc ahaypekjo";
     string enc2 = "Vejliv rcc dvuzr tfekifc gifkftfcj riv rtkzmv svwfiv kyv X20 jlddzk";
